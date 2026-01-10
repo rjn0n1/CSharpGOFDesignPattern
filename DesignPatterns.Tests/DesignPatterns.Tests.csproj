@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DesignPatterns.Behavioural\DesignPatterns.Behavioural.csproj" />
+    <ProjectReference Include="..\DesignPatterns.Creational\DesignPatterns.Creational.csproj" />
+    <ProjectReference Include="..\DesignPatterns.Structural\DesignPatterns.Structural.csproj" />
+  </ItemGroup>
+
+</Project>
