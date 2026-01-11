@@ -35,3 +35,15 @@ Each pattern is implemented in isolation with:
 - Lazy Singleton (not thread-safe)
 - Thread-safe Singleton using locking
 - Thread-safe Lazy<T> (recommended)
+
+## Factory Method Pattern
+
+### Description
+
+### Structure
+
+### Implementation
+
+### Use Cases
+
+### Pattern Consequences
