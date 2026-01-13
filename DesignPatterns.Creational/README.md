@@ -37,13 +37,91 @@ Each pattern is implemented in isolation with:
 - Thread-safe Lazy<T> (recommended)
 
 ## Factory Method Pattern
-
+ 
+ Defer instantiation to subclass, interface,
 ### Description
+ 
 
 ### Structure
+ 1. Product: Interface/Abstract
+	1. Concrete Product: Implementation of the Prodcxt
+	1. 
 
 ### Implementation
 
 ### Use Cases
+	Discount: Freedom Sale, Deepawali Sale 
+	Exporting documents to different formats
+	Instantiating plugins in plugin system
+	Generating mocks or test data
+	Abstracting data sources
 
 ### Pattern Consequences
+
+
+
+## Prototype Pattern
+
+ 
+### Description
+ Prototype Pattern creates new objects by cloning existing ones instead of constructing them from scratch.
+
+### Structure
+ 1. Product: Interface/Abstract
+	1. Concrete Product: Implementation of the Prodcxt
+	1. 
+
+### Implementation
+
+### Use Cases
+	1. HIS / Healthcare (your domain)
+
+		Base ClaimRequest
+
+		Clone per patient
+
+		Modify patient-specific fields
+
+		Avoid rebuilding FHIR-heavy objects
+
+	2. Document templates
+
+		Invoice template
+
+		Discharge summary template
+
+		Prescription template
+
+		Clone → fill → send
+
+	3. Game engines
+
+		Enemy archetypes
+
+		Weapon configs
+
+		Skill trees
+
+		Creation cost is huge → cloning is cheaper.
+
+	4. Configuration snapshots
+
+		Base config loaded once
+
+		Clone per request / tenant
+
+### Pattern Consequences
+
+### Not Benefecial
+   If creating an object is cheap → Prototype is useless.
+
+	'''
+	Objects are simple DTOs
+
+	Constructors are cheap
+
+	Object graph is small
+
+	You don’t control mutation
+	'''
+
